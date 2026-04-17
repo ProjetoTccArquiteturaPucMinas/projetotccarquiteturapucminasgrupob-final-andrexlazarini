@@ -1,6 +1,6 @@
 ﻿# Sistema de Cálculo de Descontos para Marketplace 
  
-## Seu Nome:
+## Seu Nome: André Xavier Lazarini
 
 ## Visão Geral do Projeto
 
