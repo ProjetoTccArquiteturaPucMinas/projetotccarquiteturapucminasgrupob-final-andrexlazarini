@@ -24,14 +24,11 @@ jobs:
       # 🔹 Build + testes
       - name: Build + Testes Unitários
         run: mvn clean install
-        working-directory: marketplace
 
       # 🔹 Testes unitários
       - name: Executar Testes Unitários
         run: mvn test
-        working-directory: marketplace
 
       # 🔹 Testes de arquitetura
       - name: Executar Testes de Arquitetura
         run: mvn test -Dtest=ArchitectureTest
-        working-directory: marketplace
