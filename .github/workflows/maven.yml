@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   continuous-integration:
@@ -25,14 +25,11 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
-      # 🔹 Build (com testes)
       - name: Build + Testes Unitários
         run: mvn clean install
 
-      # 🔹 Testes unitários isolados
       - name: Executar Testes Unitários
         run: mvn test
 
-      # 🔹 Testes de arquitetura
       - name: Executar Testes de Arquitetura
         run: mvn test -Dtest=ArquiteturaTest
